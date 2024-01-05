@@ -1,4 +1,6 @@
-module.exports = async function () {
+import TrackPlayer, { Event } from 'react-native-track-player';
+
+export default async function PlaybackService () {
 
 
   // This service needs to be registered for the module to work
