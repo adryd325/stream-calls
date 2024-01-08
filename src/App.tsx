@@ -15,7 +15,9 @@ import {
   Text,
   useColorScheme,
   View,
+  
 } from 'react-native';
+
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
@@ -43,19 +45,47 @@ function App(): React.JSX.Element {
             SDR Streamer
           </Text>
           <View style={{...styles.call}}>
-            <View>
-              <Text>ICON HERE</Text>
+            <View style={{justifyContent:"center", alignItems: "center", paddingRight:8}}>
+              <View style= {{width: 24, height: 24}}>
+              <Text>▶️</Text>
+              </View>
             </View>
             <View>
-              <Text style={{fontWeight: 'bold'}}>100101</Text>
-              <Text>4044</Text>
+              <Text style={{fontWeight: 'bold'}}>Transit Control</Text>
+              <Text>Run 262</Text>
               <Text></Text>
             </View>
-            <View style={{marginLeft: 'auto'}}>
-              <Text>2024-01-05 00:09:23</Text>
-              <View style={{alignSelf: 'flex-end'}}>
-                <Text>00:32</Text>
+            <View
+              style={{
+                marginLeft: 'auto',
+                alignItems: 'flex-end',
+                flexDirection: 'column',
+              }}>
+              <Text>2024-01-05</Text>
+              <Text>01:09:23</Text>
+              <Text>CID: 14</Text>
+            </View>
+          </View>
+          <View style={{...styles.call}}>
+            <View style={{justifyContent:"center", alignItems: "center", paddingRight:8}}>
+              <View style= {{width: 24, height: 24}}>
+              <Text>▶️</Text>
               </View>
+            </View>
+            <View>
+              <Text style={{fontWeight: 'bold'}}>Transit Control</Text>
+              <Text>Run 260</Text>
+              <Text></Text>
+            </View>
+            <View
+              style={{
+                marginLeft: 'auto',
+                alignItems: 'flex-end',
+                flexDirection: 'column',
+              }}>
+              <Text>2024-01-05</Text>
+              <Text>01:09:23</Text>
+              <Text>CID: 14</Text>
             </View>
           </View>
         </View>
@@ -67,6 +97,7 @@ function App(): React.JSX.Element {
 const styles = StyleSheet.create({
   call: {
     backgroundColor: Colors.lighter,
+    marginVertical: 4,
     padding: 24,
     borderRadius: 16,
     flexDirection: 'row',
